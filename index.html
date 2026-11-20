@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>あっとほーむばー ぼくるーむ｜心斎橋のラーメンBAR・〆の本格塩ラーメン</title>
+<meta name="description" content="大阪市中央区東心斎橋のラーメンBAR「あっとほーむばー ぼくるーむ」。心斎橋駅・長堀橋駅近く、火〜日21:00〜翌5:00営業。元芸人オーナーのアットホームなバーで、手作りチャーシューと煮卵の〆の本格塩ラーメン、カラオケ・ダーツ・ゲーム。Google口コミ110件・★4.9。月曜定休。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "あっとほーむばー ぼくるーむ",
+  "alternateName": "ラーメンBARぼくるーむ",
+  "description": "東心斎橋のラーメンBAR。元芸人オーナーのアットホームなバーで、〆の本格塩ラーメンとカラオケ・ダーツが楽しめる。",
+  "telephone": "090-9257-6719",
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "542-0083",
+    "addressRegion": "大阪府",
+    "addressLocality": "大阪市中央区",
+    "streetAddress": "東心斎橋2-8-20 新日本畳屋町ビル305",
+    "addressCountry": "JP"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "21:00",
+    "closes": "05:00"
+  }],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "110"
+  },
+  "sameAs": ["https://www.instagram.com/bokuroom1/"]
+}
+</script>
+<style>
+  :root{
+    --bg:#171009; --bg2:#1f150c; --card:#251a10; --card2:#2c1f13;
+    --cream:#f7ead9; --cream2:#e6d3b8; --muted:#b39a78; --muted2:#8a7358;
+    --amber:#e8a33d; --amber-l:#f6c877; --amber-d:#b97a24;
+    --aka:#e2603f; --aka-l:#f0876a;
+    --line:rgba(232,163,61,.30); --line-soft:rgba(247,234,217,.12);
+    --maru:"Zen Maru Gothic","Hiragino Maru Gothic ProN",sans-serif;
+    --sans:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    --hand:"Caveat",cursive;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--bg);color:var(--cream);line-height:1.9;font-size:15.5px;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  img{display:block;max-width:100%;}
+  a{color:var(--amber-l);}
+  ::selection{background:var(--amber);color:#2a1802;}
+
+  /* ---------- SAMPLE watermark ---------- */
+  .wm{position:fixed;inset:0;z-index:60;pointer-events:none;overflow:hidden;}
+  .wm span{position:absolute;font-family:var(--maru);font-weight:900;font-size:120px;letter-spacing:.2em;color:rgba(247,234,217,.045);transform:rotate(-24deg);white-space:nowrap;}
+  .wm span:nth-child(1){top:6%;left:-4%;}
+  .wm span:nth-child(2){top:42%;left:16%;}
+  .wm span:nth-child(3){top:76%;left:-6%;}
+
+  /* ---------- sample band ---------- */
+  .sample-band{position:fixed;top:0;left:0;right:0;z-index:80;background:rgba(12,8,4,.94);backdrop-filter:blur(6px);color:#d8c5a5;text-align:center;font-size:10.5px;letter-spacing:.18em;padding:6px 10px;border-bottom:1px solid rgba(232,163,61,.22);}
+
+  /* ---------- header ---------- */
+  .site-head{position:fixed;top:27px;left:0;right:0;z-index:70;transition:background .4s,box-shadow .4s;}
+  .site-head.scrolled{background:rgba(20,13,7,.9);backdrop-filter:blur(10px);box-shadow:0 10px 30px rgba(0,0,0,.4);}
+  .site-head .in{max-width:1120px;margin:0 auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;}
+  .logo{font-family:var(--maru);font-weight:900;font-size:19px;letter-spacing:.06em;color:var(--cream);text-decoration:none;line-height:1.25;}
+  .logo small{display:block;font-family:var(--hand);font-weight:700;font-size:13px;letter-spacing:.28em;color:var(--amber);margin-top:1px;}
+  .head-nav{display:flex;align-items:center;gap:24px;}
+  .head-nav a.nl{color:var(--cream2);text-decoration:none;font-size:12.5px;letter-spacing:.14em;padding:4px 0;}
+  .head-nav a.nl:hover{color:var(--amber-l);}
+  .head-tel{font-weight:700;font-size:14.5px;letter-spacing:.06em;color:var(--cream);text-decoration:none;border:1px solid var(--line);padding:7px 16px;border-radius:999px;transition:.3s;}
+  .head-tel:hover{background:var(--amber);color:#2a1802;border-color:var(--amber);}
+  @media(max-width:760px){.head-nav a.nl{display:none;}.head-tel{font-size:13.5px;padding:6px 13px;}}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;}
+  .hero-bg{position:absolute;inset:0;}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;animation:kenburns 26s ease-in-out infinite alternate;}
+  @keyframes kenburns{from{transform:scale(1) translateY(0);}to{transform:scale(1.12) translateY(-1.5%);}}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:
+    radial-gradient(90% 60% at 50% 38%, rgba(23,16,9,.15) 0%, rgba(23,16,9,.5) 62%, rgba(23,16,9,.94) 100%),
+    linear-gradient(180deg, rgba(23,16,9,.55) 0%, rgba(23,16,9,.12) 30%, rgba(23,16,9,.25) 62%, var(--bg) 100%);}
+  .hero-in{position:relative;z-index:2;padding:150px 22px 110px;max-width:840px;}
+  .hero .fr{font-family:var(--hand);letter-spacing:.34em;text-indent:.34em;font-size:16px;color:var(--amber-l);font-weight:700;}
+  .hero h1{font-family:var(--maru);font-weight:900;font-size:clamp(34px,8.4vw,58px);letter-spacing:.04em;line-height:1.35;margin-top:14px;text-shadow:0 6px 40px rgba(0,0,0,.6);}
+  .hero h1 .roman{display:block;font-family:var(--hand);font-size:clamp(14px,3vw,19px);letter-spacing:.5em;text-indent:.5em;color:var(--amber-l);font-weight:700;margin-top:10px;}
+  .hero .catch{font-family:var(--maru);font-weight:700;font-size:clamp(18px,4.6vw,25px);letter-spacing:.06em;line-height:2;margin-top:26px;text-shadow:0 3px 18px rgba(0,0,0,.65);}
+  .hero .catch .aka{color:var(--aka-l);}
+  .hero .catch small{display:block;font-family:var(--sans);font-weight:400;font-size:13.5px;letter-spacing:.04em;color:var(--cream2);margin-top:10px;line-height:1.9;}
+  .orn{display:flex;align-items:center;gap:14px;justify-content:center;margin:28px auto 0;max-width:360px;}
+  .orn::before,.orn::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--amber));}
+  .orn::after{background:linear-gradient(90deg,var(--amber),transparent);}
+  .orn i{color:var(--amber);font-style:normal;font-size:12px;}
+  .status{display:inline-flex;align-items:center;gap:9px;margin-top:26px;border:1px solid var(--line);background:rgba(23,16,9,.6);backdrop-filter:blur(6px);border-radius:999px;padding:9px 20px;font-size:13px;letter-spacing:.08em;}
+  .status .dot{width:8px;height:8px;border-radius:50%;background:#9fd18b;box-shadow:0 0 12px #9fd18b;animation:pulse 2.2s infinite;flex:none;}
+  .status.closed .dot{background:#d18b8b;box-shadow:0 0 12px #d18b8b;animation:none;}
+  @keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.35);}}
+  .badges{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin-top:16px;}
+  .badge{background:rgba(31,21,12,.7);backdrop-filter:blur(6px);border:1px solid var(--line-soft);color:var(--cream);border-radius:999px;padding:8px 16px;font-size:12.5px;letter-spacing:.05em;}
+  .badge b{color:var(--amber-l);font-size:15px;letter-spacing:.03em;}
+  .badge .star{color:var(--amber);}
+  .hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px;}
+  .btn{display:inline-block;text-decoration:none;border-radius:999px;padding:14px 30px;font-size:14.5px;letter-spacing:.1em;font-weight:700;transition:.3s;}
+  .btn-amber{background:linear-gradient(180deg,var(--amber-l),var(--amber));color:#2a1802;box-shadow:0 10px 26px rgba(232,163,61,.28);}
+  .btn-amber:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(232,163,61,.4);}
+  .btn-ghost{border:1px solid rgba(247,234,217,.45);color:var(--cream);background:rgba(23,16,9,.3);}
+  .btn-ghost:hover{border-color:var(--amber);color:var(--amber-l);}
+  .img-note{margin-top:18px;font-size:11px;color:var(--muted);letter-spacing:.08em;}
+  .scroll-hint{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:2;color:var(--muted);font-family:var(--hand);font-size:13px;letter-spacing:.4em;text-indent:.4em;text-align:center;}
+  .scroll-hint::after{content:"";display:block;width:1px;height:42px;margin:8px auto 0;background:linear-gradient(180deg,var(--amber),transparent);animation:drip 2.4s ease-in-out infinite;}
+  @keyframes drip{0%{transform:scaleY(.3);transform-origin:top;opacity:.4;}55%{transform:scaleY(1);opacity:1;}100%{transform:scaleY(1);opacity:.35;}}
+
+  /* ---------- marquee ---------- */
+  .marquee{border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);background:var(--bg2);overflow:hidden;padding:12px 0;}
+  .marquee .track{display:flex;width:max-content;animation:mq 38s linear infinite;}
+  .marquee span{font-family:var(--hand);letter-spacing:.34em;font-size:14.5px;color:var(--muted);white-space:nowrap;padding-right:.34em;}
+  .marquee span b{color:var(--amber);font-weight:700;}
+  @keyframes mq{to{transform:translateX(-50%);}}
+
+  /* ---------- layout / sections ---------- */
+  main{position:relative;z-index:2;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px;}
+  section{padding:92px 0 8px;}
+  .sec-head{text-align:center;margin-bottom:42px;}
+  .sec-head .fr2{font-family:var(--hand);letter-spacing:.42em;text-indent:.42em;font-size:14px;color:var(--amber);font-weight:700;}
+  .sec-head h2{font-family:var(--maru);font-weight:900;font-size:clamp(23px,5.4vw,31px);letter-spacing:.1em;margin-top:6px;}
+  .sec-head p{color:var(--muted);font-size:13.5px;margin-top:10px;letter-spacing:.04em;}
+
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease;}
+  .reveal.on{opacity:1;transform:none;}
+
+  /* ---------- about / number cards ---------- */
+  .about-txt{max-width:760px;margin:0 auto;text-align:center;font-size:15.5px;line-height:2.1;}
+  .about-txt b{color:var(--amber-l);}
+  .num-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:860px;margin:40px auto 0;}
+  .num-card{background:var(--card);border:1px solid var(--line-soft);border-radius:18px;padding:22px 10px 18px;text-align:center;}
+  .num-card .n{font-family:var(--maru);font-weight:900;font-size:clamp(24px,5.4vw,34px);color:var(--amber-l);line-height:1.2;}
+  .num-card .n small{font-size:.55em;color:var(--cream2);}
+  .num-card .l{font-size:12px;color:var(--muted);letter-spacing:.1em;margin-top:6px;}
+  @media(max-width:640px){.num-cards{grid-template-columns:repeat(2,1fr);}}
+
+  /* ---------- reasons ---------- */
+  .reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  @media(max-width:820px){.reasons{grid-template-columns:1fr;}}
+  .reason{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line-soft);border-radius:20px;padding:28px 24px;}
+  .reason .no{font-family:var(--hand);font-size:21px;color:var(--aka-l);letter-spacing:.14em;}
+  .reason h3{font-family:var(--maru);font-weight:700;font-size:18.5px;letter-spacing:.05em;line-height:1.6;margin:8px 0 10px;}
+  .reason p{font-size:14px;color:var(--cream2);line-height:1.95;}
+  .reason p b{color:var(--amber-l);}
+
+  /* ---------- menu ---------- */
+  .menu-main{display:grid;grid-template-columns:1.15fr 1fr;gap:16px;align-items:stretch;}
+  @media(max-width:820px){.menu-main{grid-template-columns:1fr;}}
+  .dish{background:var(--card);border:1px solid var(--line-soft);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;}
+  .dish figure{position:relative;}
+  .dish figure img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;}
+  .dish figcaption{position:absolute;left:12px;bottom:10px;background:rgba(12,8,4,.72);color:#e9dcc4;font-size:10.5px;letter-spacing:.1em;padding:4px 10px;border-radius:999px;}
+  .dish .body{padding:22px 24px 24px;}
+  .dish .tag{display:inline-block;background:var(--aka);color:#fff;font-family:var(--maru);font-weight:700;font-size:11.5px;letter-spacing:.14em;border-radius:999px;padding:4px 12px;margin-bottom:10px;}
+  .dish h3{font-family:var(--maru);font-weight:900;font-size:21px;letter-spacing:.05em;line-height:1.5;}
+  .dish p{font-size:14px;color:var(--cream2);margin-top:8px;line-height:1.95;}
+  .menu-side{display:flex;flex-direction:column;gap:16px;}
+  .menu-list{background:var(--card);border:1px solid var(--line-soft);border-radius:22px;padding:24px 26px;}
+  .menu-list h3{font-family:var(--maru);font-weight:700;font-size:16.5px;letter-spacing:.08em;margin-bottom:12px;color:var(--amber-l);}
+  .menu-list ul{list-style:none;}
+  .menu-list li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line-soft);font-size:14.5px;}
+  .menu-list li:last-child{border-bottom:none;}
+  .menu-list li span{color:var(--muted);font-size:12.5px;text-align:right;}
+  .price-note{max-width:820px;margin:18px auto 0;text-align:center;font-size:12.5px;color:var(--muted);line-height:1.9;}
+  .price-note b{color:var(--cream2);}
+
+  /* ---------- stay / interior ---------- */
+  .stay{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;}
+  @media(max-width:820px){.stay{grid-template-columns:1fr;}}
+  .stay figure{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line-soft);}
+  .stay figure img{width:100%;aspect-ratio:4/3;object-fit:cover;}
+  .stay figcaption{position:absolute;left:12px;bottom:10px;background:rgba(12,8,4,.72);color:#e9dcc4;font-size:10.5px;letter-spacing:.1em;padding:4px 10px;border-radius:999px;}
+  .stay h3{font-family:var(--maru);font-weight:900;font-size:clamp(20px,4.6vw,25px);letter-spacing:.06em;line-height:1.6;}
+  .stay p{font-size:14.5px;color:var(--cream2);margin-top:14px;line-height:2;}
+  .stay p b{color:var(--amber-l);}
+  .stay ul{list-style:none;margin-top:16px;display:grid;gap:9px;}
+  .stay li{font-size:14px;padding-left:26px;position:relative;}
+  .stay li::before{content:"";position:absolute;left:2px;top:.62em;width:9px;height:9px;border-radius:50%;background:var(--amber);}
+
+  /* ---------- news ---------- */
+  .news-list{display:grid;gap:10px;max-width:820px;margin:0 auto;}
+  .news-item{display:flex;gap:16px;background:var(--card);border:1px solid var(--line-soft);border-radius:14px;padding:16px 20px;align-items:baseline;}
+  .news-item time{font-weight:700;color:var(--amber);font-size:13px;white-space:nowrap;letter-spacing:.06em;}
+  .news-item p{font-size:14.5px;}
+  .news-item p span{color:var(--muted);font-size:13px;}
+
+  /* ---------- instagram banner ---------- */
+  .sns-banner{background:linear-gradient(120deg,#833ab4,#fd1d1d,#fcb045);border-radius:22px;padding:32px 22px;text-align:center;}
+  .sns-banner h2{font-family:var(--maru);font-weight:900;font-size:clamp(20px,5.6vw,27px);line-height:1.55;text-shadow:0 2px 10px rgba(0,0,0,.3);}
+  .sns-banner p{font-size:13.5px;margin-top:8px;text-shadow:0 1px 6px rgba(0,0,0,.3);}
+  .sns-banner a{display:inline-block;margin-top:16px;background:#fff;color:#c13584;font-weight:700;text-decoration:none;border-radius:999px;padding:12px 28px;font-size:15px;}
+  .sns-sub{text-align:center;margin-top:14px;font-size:13px;color:var(--muted);}
+
+  /* ---------- info ---------- */
+  .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start;}
+  @media(max-width:820px){.info-grid{grid-template-columns:1fr;}}
+  .info-table{width:100%;border-collapse:collapse;font-size:14.5px;}
+  .info-table th,.info-table td{padding:13px 6px;border-bottom:1px solid var(--line-soft);vertical-align:top;text-align:left;}
+  .info-table th{width:32%;color:var(--amber-l);font-weight:700;letter-spacing:.06em;white-space:nowrap;}
+  .info-table td{color:var(--cream2);}
+  .info-table td b{color:var(--cream);}
+  .map-box{border-radius:20px;overflow:hidden;border:1px solid var(--line-soft);}
+  .map-box iframe{width:100%;height:320px;border:0;display:block;}
+  .map-btn{margin-top:14px;text-align:center;}
+
+  /* ---------- footer ---------- */
+  footer{margin-top:100px;border-top:1px solid var(--line-soft);background:var(--bg2);padding:52px 22px 120px;text-align:center;}
+  footer .f-logo{font-family:var(--maru);font-weight:900;font-size:21px;letter-spacing:.06em;}
+  footer .f-logo small{display:block;font-family:var(--hand);font-size:14px;letter-spacing:.3em;color:var(--amber);margin-top:3px;}
+  footer p{font-size:12.5px;color:var(--muted);margin-top:12px;line-height:2;}
+  footer a{color:var(--amber-l);}
+
+  /* ---------- fixed action bar ---------- */
+  .action-bar{position:fixed;left:0;right:0;bottom:0;z-index:75;display:grid;grid-template-columns:1.2fr 1fr 1fr;background:rgba(16,10,5,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:8px 10px calc(8px + env(safe-area-inset-bottom));gap:8px;}
+  .action-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;color:var(--cream);border:1px solid var(--line-soft);border-radius:14px;padding:8px 4px 7px;font-weight:700;font-size:14px;letter-spacing:.06em;line-height:1.35;}
+  .action-bar a small{font-size:9.5px;color:var(--muted);letter-spacing:.18em;font-weight:400;}
+  .action-bar a.call{background:linear-gradient(180deg,var(--amber-l),var(--amber));color:#2a1802;border-color:transparent;}
+  .action-bar a.call small{color:rgba(42,24,2,.65);}
+</style>
+</head>
+<body>
+
+<div class="sample-band">これはサンプルです。無断使用は禁止しています</div>
+<div class="wm" aria-hidden="true"><span>SAMPLE</span><span>SAMPLE</span><span>SAMPLE</span></div>
+
+<header class="site-head" id="siteHead">
+  <div class="in">
+    <a class="logo" href="#">あっとほーむばー ぼくるーむ<small>BOKU ROOM</small></a>
+    <nav class="head-nav">
+      <a class="nl" href="#about">お店について</a>
+      <a class="nl" href="#menu">名物メニュー</a>
+      <a class="nl" href="#news">お知らせ</a>
+      <a class="nl" href="#info">店舗情報</a>
+      <a class="head-tel" href="tel:09092576719">☎ 090-9257-6719</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<div class="hero">
+  <div class="hero-bg"><img src="hero.webp" alt="カウンターに置かれた湯気の立つ塩ラーメン（イメージ）"></div>
+  <div class="hero-in">
+    <p class="fr">AT HOME BAR — SHINSAIBASHI, OSAKA</p>
+    <h1>あっとほーむばー<br>ぼくるーむ<span class="roman">RAMEN BAR BOKU ROOM</span></h1>
+    <p class="catch">バーなのに、〆は<span class="aka">本格塩ラーメン</span>。
+      <small>東心斎橋のビルの3階。元芸人オーナーが営む、<br>笑って、遊んで、〆られるアットホームなラーメンBARです。</small>
+    </p>
+    <div class="orn"><i>◆</i></div>
+    <div><span class="status" id="statusPill"><span class="dot"></span><span id="statusText">営業時間を確認中…</span></span></div>
+    <div class="badges">
+      <span class="badge">Google口コミ <b>110</b>件・<span class="star">★</span><b>4.9</b></span>
+      <span class="badge">火〜日 <b>21:00</b>〜翌<b>5:00</b></span>
+      <span class="badge">全<b>12</b>席の小さな店</span>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-amber" href="tel:09092576719">電話する</a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/bokuroom1/" target="_blank" rel="noopener">Instagramを見る</a>
+    </div>
+    <p class="img-note">※ 写真はイメージです（AI生成）</p>
+  </div>
+  <div class="scroll-hint">SCROLL</div>
+</div>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track" id="mqTrack">
+    <span>AT HOME BAR <b>✦</b> SHIO RAMEN <b>✦</b> KARAOKE <b>✦</b> DARTS <b>✦</b> GAMES <b>✦</b> OPEN 21:00 – 5:00 <b>✦</b> SHINSAIBASHI <b>✦</b> </span>
+  </div>
+</div>
+
+<main>
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="fr2">ABOUT</p>
+      <h2>お店について</h2>
+    </div>
+    <p class="about-txt reveal">
+      オーナーは<b>元芸人</b>。カウンター越しのトークと、<br>
+      オーナーと店長の顔が見える距離の近さが自慢の、<b>全12席</b>の小さなバーです。<br>
+      お酒を飲んで、カラオケやダーツで遊んで、最後は<b>手作りチャーシューと煮卵の本格塩ラーメン</b>で〆る。<br>
+      「ただいま」と「おかえり」が似合う、東心斎橋の“もうひとつの部屋”です。
+    </p>
+    <div class="num-cards">
+      <div class="num-card reveal"><div class="n">★4.9</div><div class="l">Google評価</div></div>
+      <div class="num-card reveal"><div class="n">110<small>件</small></div><div class="l">Google口コミ</div></div>
+      <div class="num-card reveal"><div class="n">12<small>席</small></div><div class="l">アットホームな店内</div></div>
+      <div class="num-card reveal"><div class="n">翌5:00</div><div class="l">まで営業（火〜日）</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REASONS ============ -->
+<section id="reasons">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="fr2">WHY BOKU ROOM</p>
+      <h2>ぼくるーむの3つの楽しみ</h2>
+    </div>
+    <div class="reasons">
+      <div class="reason reveal">
+        <p class="no">Point 01</p>
+        <h3>〆は、手作りの<br>本格塩ラーメン</h3>
+        <p>バーの〆とは思えない本気の一杯。丁寧に仕込む<b>手作りチャーシュー</b>と、とろり半熟の<b>煮卵</b>がのった塩ラーメンは、この店の名物です。飲んだあとの体に、澄んだスープがしみわたります。</p>
+      </div>
+      <div class="reason reveal">
+        <p class="no">Point 02</p>
+        <h3>元芸人オーナーの<br>トークと距離感</h3>
+        <p>オーナーは<b>元芸人</b>。全12席のカウンター中心の店内だから、会話のキャッチボールが自然と生まれます。オーナーと店長の顔が見える発信もInstagramでチェックできます。</p>
+      </div>
+      <div class="reason reveal">
+        <p class="no">Point 03</p>
+        <h3>遊んで過ごせる、<br>朝5時までの夜</h3>
+        <p><b>カラオケ・ダーツ・ゲーム</b>をそろえて、火〜日は<b>21:00〜翌5:00</b>まで営業。1軒目にも2軒目にも、終電を逃した夜の〆にも。長くゆっくり過ごせる大人の遊び場です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section id="menu">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="fr2">SIGNATURE</p>
+      <h2>名物メニュー</h2>
+      <p>看板は、バーの本気の塩ラーメン。</p>
+    </div>
+    <div class="menu-main">
+      <article class="dish reveal">
+        <figure>
+          <img src="ramen.webp" alt="〆の本格塩ラーメン（イメージ）">
+          <figcaption>写真はイメージです（AI生成）</figcaption>
+        </figure>
+        <div class="body">
+          <span class="tag">名物</span>
+          <h3>〆の本格塩ラーメン</h3>
+          <p>手作りチャーシューと煮卵をのせた、この店の看板の一杯。澄んだ塩スープと細麺の組み合わせは、飲んだあとの〆にぴったり。「バーでこのラーメンは反則」と口コミでも評判です。</p>
+        </div>
+      </article>
+      <div class="menu-side">
+        <article class="dish reveal">
+          <figure>
+            <img src="chashu.webp" alt="手作りチャーシューと煮卵の盛り合わせ（イメージ）" loading="lazy">
+            <figcaption>写真はイメージです（AI生成）</figcaption>
+          </figure>
+          <div class="body">
+            <h3>手作りチャーシュー＆煮卵</h3>
+            <p>ラーメンの主役を、そのままおつまみに。じっくり仕込んだチャーシューと、味のしみた半熟煮卵は、お酒のお供にもどうぞ。</p>
+          </div>
+        </article>
+        <div class="menu-list reveal">
+          <h3>ドリンク＆遊び</h3>
+          <ul>
+            <li>ドリンク各種<span>ビール・ハイボール・カクテル ほか</span></li>
+            <li>カラオケ<span>歌って盛り上がれる</span></li>
+            <li>ダーツ<span>対戦も練習も</span></li>
+            <li>ゲーム<span>みんなでワイワイ</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="price-note reveal">※ 料金は店頭メニューでご確認ください。<br>
+    ご予算の目安：お一人様 <b>〜3,000円</b>（ホットペッパーグルメ掲載の目安）</p>
+  </div>
+</section>
+
+<!-- ============ STAY ============ -->
+<section id="stay">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="fr2">HOW TO ENJOY</p>
+      <h2>過ごし方</h2>
+    </div>
+    <div class="stay">
+      <figure class="reveal">
+        <img src="interior.webp" alt="木のカウンターとダーツのある店内（イメージ）" loading="lazy">
+        <figcaption>店内のイメージです（AI生成）</figcaption>
+      </figure>
+      <div class="reveal">
+        <h3>1軒目でも、2軒目でも、<br>〆の一杯まで。</h3>
+        <p>新日本畳屋町ビルの<b>3階</b>、ドアを開ければ木のカウンターと温かい灯り。仕事帰りにふらっと、飲み会のあとにもう少しだけ、そんな夜にちょうどいい場所です。</p>
+        <ul>
+          <li>おひとり様のカウンター飲みも歓迎</li>
+          <li>カラオケ・ダーツ・ゲームで遊べる</li>
+          <li>最後は名物の塩ラーメンで〆</li>
+          <li>火〜日 21:00〜翌5:00／月曜定休</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWS ============ -->
+<section id="news">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="fr2">NEWS</p>
+      <h2>お知らせ</h2>
+    </div>
+    <div class="news-list">
+      <div class="news-item reveal"><time>2026.11</time><p>火〜日 21:00〜翌5:00で営業しています。<span>（月曜は定休日です）</span></p></div>
+      <div class="news-item reveal"><time>2026.11</time><p>臨時休業やイベントのお知らせは、公式Instagramで発信しています。<span>（@bokuroom1）</span></p></div>
+      <div class="news-item reveal"><time>2026.11</time><p>名物の〆の塩ラーメンは、数量に限りがあるため売り切れの際はご容赦ください。<span>（最新情報はInstagramへ）</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section>
+  <div class="wrap">
+    <div class="sns-banner reveal">
+      <h2>オーナーと店長の素顔は、<br>Instagramで。</h2>
+      <p>日々のお店の様子やお知らせを発信中。フォロワー981人・投稿198件。</p>
+      <a href="https://www.instagram.com/bokuroom1/" target="_blank" rel="noopener">@bokuroom1 をフォロー</a>
+    </div>
+    <p class="sns-sub reveal">最新情報・臨時休業のお知らせはInstagramが一番早いです。</p>
+  </div>
+</section>
+
+<!-- ============ INFO ============ -->
+<section id="info">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="fr2">INFORMATION</p>
+      <h2>店舗情報</h2>
+    </div>
+    <div class="info-grid">
+      <div class="reveal">
+        <table class="info-table">
+          <tr><th>店名</th><td><b>あっとほーむばー ぼくるーむ</b>（ラーメンBARぼくるーむ）</td></tr>
+          <tr><th>住所</th><td>〒542-0083<br>大阪府大阪市中央区東心斎橋2-8-20<br>新日本畳屋町ビル305（3F）</td></tr>
+          <tr><th>アクセス</th><td>長堀橋駅から徒歩約4分／心斎橋駅から徒歩約7分（目安）</td></tr>
+          <tr><th>電話</th><td><a href="tel:09092576719"><b>090-9257-6719</b></a></td></tr>
+          <tr><th>営業時間</th><td>火〜日 <b>21:00〜翌5:00</b></td></tr>
+          <tr><th>定休日</th><td>月曜日</td></tr>
+          <tr><th>席数</th><td>12席</td></tr>
+          <tr><th>予算目安</th><td>お一人様 〜3,000円</td></tr>
+          <tr><th>駐車場</th><td>専用駐車場はございません（近隣のコインパーキングをご利用ください）</td></tr>
+          <tr><th>Instagram</th><td><a href="https://www.instagram.com/bokuroom1/" target="_blank" rel="noopener">@bokuroom1</a></td></tr>
+        </table>
+      </div>
+      <div class="reveal">
+        <div class="map-box">
+          <iframe title="あっとほーむばー ぼくるーむ 地図" src="https://www.google.com/maps?q=%E3%81%82%E3%81%A3%E3%81%A8%E3%81%BB%E3%83%BC%E3%82%80%E3%81%B0%E3%83%BC%20%E3%81%BC%E3%81%8F%E3%82%8B%E3%83%BC%E3%82%80%20%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%9D%B1%E5%BF%83%E6%96%8E%E6%A9%8B2-8-20&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map-btn">
+          <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%9D%B1%E5%BF%83%E6%96%8E%E6%A9%8B2-8-20%20%E6%96%B0%E6%97%A5%E6%9C%AC%E7%95%B3%E5%B1%8B%E7%94%BA%E3%83%93%E3%83%AB305" target="_blank" rel="noopener">Googleマップで経路を見る</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p class="f-logo">あっとほーむばー ぼくるーむ<small>RAMEN BAR BOKU ROOM</small></p>
+  <p>〒542-0083 大阪府大阪市中央区東心斎橋2-8-20 新日本畳屋町ビル305（3F）<br>
+  TEL <a href="tel:09092576719">090-9257-6719</a>／火〜日 21:00〜翌5:00・月曜定休<br>
+  Instagram <a href="https://www.instagram.com/bokuroom1/" target="_blank" rel="noopener">@bokuroom1</a></p>
+  <p>評価・口コミ数（Google口コミ110件・★4.9）、席数・予算目安（ホットペッパーグルメ）など、公開情報をもとに掲載しています。<br>
+  写真はすべてイメージです（AI生成）。実際の店舗・メニューとは異なる場合があります。</p>
+  <p>これはサンプルです。無断使用は禁止しています。</p>
+</footer>
+
+<nav class="action-bar">
+  <a class="call" href="tel:09092576719">☎ 電話する<small>TEL 090-9257-6719</small></a>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%9D%B1%E5%BF%83%E6%96%8E%E6%A9%8B2-8-20%20%E6%96%B0%E6%97%A5%E6%9C%AC%E7%95%B3%E5%B1%8B%E7%94%BA%E3%83%93%E3%83%AB305" target="_blank" rel="noopener">経路案内<small>GOOGLE MAP</small></a>
+  <a href="https://www.instagram.com/bokuroom1/" target="_blank" rel="noopener">Instagram<small>@bokuroom1</small></a>
+</nav>
+
+<script>
+  // marquee duplicate for seamless loop
+  (function(){
+    var t = document.getElementById('mqTrack');
+    t.innerHTML += t.innerHTML;
+  })();
+
+  // header background on scroll
+  (function(){
+    var h = document.getElementById('siteHead');
+    function onScroll(){ h.classList.toggle('scrolled', window.scrollY > 40); }
+    window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  })();
+
+  // reveal on scroll
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function(e){ e.classList.add('on'); }); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('on'); io.unobserve(en.target); } });
+    }, {threshold: .12});
+    els.forEach(function(e){ io.observe(e); });
+  })();
+
+  // live business status (JST) — Tue-Sun 21:00-05:00, closed Mondays
+  (function(){
+    var pill = document.getElementById('statusPill');
+    var txt = document.getElementById('statusText');
+    var BIZ = {0:true, 2:true, 3:true, 4:true, 5:true, 6:true}; // Sun, Tue-Sat (getDay)
+    function jstParts(){
+      var parts = new Intl.DateTimeFormat('en-US', {timeZone:'Asia/Tokyo', weekday:'short', hour:'2-digit', minute:'2-digit', hour12:false}).formatToParts(new Date());
+      var o = {};
+      parts.forEach(function(p){ o[p.type] = p.value; });
+      var dayMap = {Sun:0, Mon:1, Tue:2, Wed:3, Thu:4, Fri:5, Sat:6};
+      return { day: dayMap[o.weekday], mins: (parseInt(o.hour,10) % 24) * 60 + parseInt(o.minute,10) };
+    }
+    function update(){
+      var n = jstParts(), mins = n.mins, day = n.day;
+      var open = false, msg = '';
+      if (BIZ[day] && mins >= 21*60) { open = true; msg = '営業中｜本日 21:00〜翌5:00'; }
+      else if (BIZ[(day+6)%7] && mins < 5*60) { open = true; msg = '営業中｜翌5:00まで'; }
+      else if (day === 1 && mins >= 5*60) { msg = '本日は定休日（月曜）｜明日 21:00 オープン'; }
+      else if (BIZ[day]) { msg = '本日 21:00 オープン｜翌5:00まで'; }
+      else { msg = '本日 21:00 オープン｜翌5:00まで'; } // Monday early morning handled above; fallback
+      if (day === 1 && mins < 5*60) { /* Sunday session continues */ }
+      pill.classList.toggle('closed', !open);
+      txt.textContent = msg;
+    }
+    update();
+    setInterval(update, 60000);
+  })();
+</script>
+</body>
+</html>
